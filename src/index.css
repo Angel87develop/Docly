@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-docly-bg: #0a0a0a;
+  --color-docly-surface: #121212;
+  --color-docly-surface-soft: #171717;
+  --color-docly-border: #1f1f1f;
+  --color-docly-muted: #737373;
+  --color-docly-accent: #ff2a2a;
+  --color-docly-accent-dim: #cc2222;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-docly-bg text-neutral-100 min-h-screen font-sans;
+    background-image:
+      radial-gradient(ellipse 120% 80% at 50% -20%, rgba(255, 42, 42, 0.13), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(255, 42, 42, 0.08), transparent),
+      linear-gradient(180deg, #0b0b0b 0%, #080808 100%);
+  }
+}
+
+@keyframes docly-modal {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
