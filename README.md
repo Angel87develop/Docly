@@ -1,4 +1,4 @@
-````md
+
 # Docly
 
 > Una biblioteca moderna para organizar y leer documentos locales.
@@ -125,4 +125,3 @@ src/
 **En desarrollo activo.**
 
 Docly ya ofrece una experiencia sólida para organizar y leer documentos locales, y continuará incorporando nuevas funciones enfocadas en mejorar la organización, el rendimiento y la experiencia de usuario.
-````
